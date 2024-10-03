@@ -7,5 +7,9 @@ public class Main {
 		System.out.println(mainMenu.getSelection() + "foi selecionada");
 		System.out.println("Fim");
 	}
+	
+	
+	
+	
 
 }
