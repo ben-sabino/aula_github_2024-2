@@ -23,4 +23,8 @@ public class CadastroClientes {
             }
         }
     }
+
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
 }
