@@ -2,23 +2,25 @@ public class Conta {
     private String cpfCliente;
     private double saldo;
 
-    public Conta(String cpfCliente) {
-        this.cpfCliente = cpfCliente;
-        this.saldo = 0.0;
+    public Conta(double saldoInicial) {
+        this.saldo = saldoInicial;
     }
 
-    public String getCpfCliente() {
-        return cpfCliente;
+    // Método para consultar o saldo
+    public double consultarSaldo() {
+        return saldo;
     }
 
-    public double getSaldo() {
-        return 0;
-    }
-
+    // Método para depositar
     public void depositar(double valor) {
+        saldo += valor;
     }
 
-    public boolean sacar(double valor) {
-        return true;
+    // Método para sacar
+    public void sacar(double valor) {
+        if (valor <= saldo) {
+            saldo -= valor;
+        } else {
+            System.out.println("Saldo insuficiente.");
+        }
     }
-}
