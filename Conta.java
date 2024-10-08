@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Conta {
+public class Conta {
+    private String cpfCliente;
     private double saldo;
     private List<String> transacoes; // Lista para registrar as transações
 
