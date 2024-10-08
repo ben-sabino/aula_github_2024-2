@@ -1,4 +1,5 @@
-class Conta {
+public class Conta {
+    private String cpfCliente;
     private double saldo;
 
     public Conta(double saldoInicial) {
