@@ -9,7 +9,7 @@ public class CadastraConta {
     }
 
     public void cadastrarConta(String cpfCliente) {
-        Conta novaConta = new Conta(cpfCliente);
+        Conta novaConta = new Conta(1000);
         contas.add(novaConta);
         System.out.println("Conta cadastrada com sucesso para o CPF: " + cpfCliente);
     }
